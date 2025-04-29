@@ -1,7 +1,14 @@
 <?php
 
+use App\Models\Task;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $tasks = Task::all();
+
+    foreach ($tasks as $task) {
+        echo "{$task->name} - {$task->person->name} ({$task->person->role->name})<br>";
+    }
+
 });
