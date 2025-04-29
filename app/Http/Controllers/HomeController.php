@@ -12,7 +12,8 @@ class HomeController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $tasks = Task::all();
+        $tasks = Task::query()
+            ->get();
 
         return view('home', [
             'tasks' => $tasks,
