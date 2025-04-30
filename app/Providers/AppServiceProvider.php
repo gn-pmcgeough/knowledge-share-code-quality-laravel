@@ -17,6 +17,11 @@ class AppServiceProvider extends ServiceProvider
 
     /**
      * Bootstrap any application services.
+     *
+     * Clear caches
+     * php artisan config:clear
+     * php artisan cache:clear
+     * php artisan config:cache
      */
     public function boot(): void
     {
