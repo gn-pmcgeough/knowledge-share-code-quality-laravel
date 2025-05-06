@@ -67,6 +67,29 @@
         "lint": "pint",
         "test:refactor": "rector --dry-run",
         "refactor": "rector",
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
         "test": [
             "@php artisan config:clear --ansi",
             "@test:pest",
