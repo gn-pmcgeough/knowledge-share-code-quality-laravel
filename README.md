@@ -8,8 +8,11 @@ php artisan migrate
 ```
 
 Laravel IDE Helper: https://github.com/barryvdh/laravel-ide-helper
+This adds properties for type hinting for your ide, It is based on the database, just to be aware
+To use run whatever your version of docker compose exec api is with `php artisan ide-helper:models -RW -q`
 ```
 composer require --dev barryvdh/laravel-ide-helper
+php artisan ide-helper:models -RW -q
 ```
 
 Larastan: https://github.com/larastan/larastan
@@ -31,10 +34,6 @@ Rector: https://getrector.com/documentation
 ```
 composer require rector/rector --dev
 ```
-
-## IDE Helper
-This adds properties for type hinting for your ide, It is based on the database, just to be aware
-To use run whatever your version of docker compose exec api is with `php artisan ide-helper:models -RW -q`
 
 ## Automatic Usage
 To use run whatever your version of docker compose exec api is with composer test
