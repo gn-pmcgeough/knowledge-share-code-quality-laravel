@@ -8,6 +8,7 @@ php artisan migrate
 ```
 
 Laravel IDE Helper: https://github.com/barryvdh/laravel-ide-helper
+
 This adds properties for type hinting for your ide, It is based on the database, just to be aware
 To use run whatever your version of docker compose exec api is with `php artisan ide-helper:models -RW -q`
 ```
